@@ -29,8 +29,8 @@ FILE_FORMATS = {file_format: directory
                 for file_format in file_formats}
 
 
-def organize_junk(folder='./'):
-    for entry in os.scandir(folder):
+def organize_junk():
+    for entry in os.scandir():
         if entry.is_dir():
             continue
         file_path = Path(entry)
