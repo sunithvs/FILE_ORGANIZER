@@ -49,7 +49,4 @@ def organize_junk():
 
 
 if __name__ == "__main__":
-    try:
-        organize_junk(sys.argv[1])
-    except Exception as e:
-        organize_junk()
+    organize_junk()

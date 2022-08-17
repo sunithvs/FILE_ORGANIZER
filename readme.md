@@ -14,6 +14,6 @@ Add the following line to the opend file
 @reboot bash ~/.scripts/watch_downloads.sh "Path to downloads file"
 ```
 
-[organize.py](File%20Organiser%20a55beb0d62ad4e6782eea6aee67da003/organize.py)
+[organize.py](./organize.py)
 
-[watch_downloads.sh](File%20Organiser%20a55beb0d62ad4e6782eea6aee67da003/watch_downloads.sh)
+[watch_downloads.sh](./watch_downloads.sh)
