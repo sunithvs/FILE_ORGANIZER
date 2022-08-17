@@ -31,8 +31,9 @@ FILE_FORMATS = {file_format: directory
 
 def organize_junk():
     for entry in os.scandir():
-        if entry.is_dir():
+        if entry.is_dir() or entry.name == "organize.py":
             continue
+
         file_path = Path(entry)
         file_format = file_path.suffix.lower()
         if file_format in FILE_FORMATS:
@@ -44,7 +45,6 @@ def organize_junk():
             try:
                 os.rmdir(folder)
             except Exception as e:
-                print(e)
                 pass
 
 
@@ -52,5 +52,4 @@ if __name__ == "__main__":
     try:
         organize_junk(sys.argv[1])
     except Exception as e:
-        print(e)
         organize_junk()
